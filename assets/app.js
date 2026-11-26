@@ -72,7 +72,7 @@ function shell() {
       <div>${WM}
         <p style="max-width:34ch;margin:18px 0 0">Tailored suits and workwear for women. Dress bold. Stay timeless.</p>
         <form class="news" onsubmit="event.preventDefault();toast('Subscribed')">
-          <label for="news-email" class="sr" style="position:absolute;left:-9999px">Email</label>
+          <label for="news-email" class="sr-only">Email</label>
           <input id="news-email" type="email" placeholder="Your email for new arrivals" required>
           <button type="submit">Join</button>
         </form>
