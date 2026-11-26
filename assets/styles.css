@@ -366,3 +366,8 @@ html[lang="ar"] .h1 em,html[lang="ar"] .h2 em,html[lang="ar"] .it{font-weight:40
 @media (max-width:900px){.lang-switch{grid-template-columns:36px 36px;height:28px}.lang-switch .thumb{width:36px}.lang-switch[data-active="ar"] .thumb{transform:translateX(36px)}.lang-switch button,.lang-switch button[lang="ar"]{width:36px}}
 [dir="rtl"] .header .nav{direction:ltr}
 [dir="rtl"] .header .nav a{direction:rtl}
+/* header text in ivory; champagne marks hover and the current page */
+.nav a,.tools,.tools a,.lang-switch button{color:var(--ivory)}
+.nav a:hover,.nav a[aria-current="page"],.tools a:hover,.tools a[aria-current="page"],.lang-switch button:hover{color:var(--champagne)}
+.lang-switch[data-active="en"] button[lang="en"],.lang-switch[data-active="ar"] button[lang="ar"]{color:var(--obsidian)}
+.menu-btn span,.menu-btn::before,.menu-btn::after{background:var(--ivory)}
