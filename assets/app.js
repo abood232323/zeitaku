@@ -127,7 +127,7 @@ function shop() {
   const tabs = document.getElementById('tabs');
   tabs.innerHTML = Object.entries(CATS).map(([k, v]) => `<button class="tab" data-cat="${k}" aria-pressed="${k === cat}">${v}</button>`).join('');
   const brk = `<div class="editorial-break"><img src="${IMG('1730740505058-940a95ba4643', 1200)}" alt="" loading="lazy">
-    <div class="in"><span class="caps" style="color:var(--champagne)">The evening edit</span><div class="h2">Quietly <em>powerful.</em></div><a class="link" href="product.html?id=evening-blazer" style="align-self:flex-start;color:var(--champagne)">Shop the blazer</a></div></div>`;
+    <div class="in"><span class="caps" style="color:var(--ivory)">The evening edit</span><div class="h2">Quietly <em>powerful.</em></div><a class="link" href="product.html?id=evening-blazer" style="align-self:flex-start;color:var(--ivory)">Shop the blazer</a></div></div>`;
   function draw() {
     let list = PRODUCTS.filter(p => cat === 'all' || p.cat === cat);
     if (sort === 'low') list = [...list].sort((a, b) => a.price - b.price);

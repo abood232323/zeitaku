@@ -117,7 +117,7 @@
     root.querySelectorAll('[placeholder]').forEach(el => { const t = tr(el.getAttribute('placeholder')); if (t) el.setAttribute('placeholder', t); });
   }
 
-  /* Segmented EN / AR switch with a sliding champagne thumb. Lives in the black header,
+  /* Segmented EN / AR switch with a sliding ivory thumb. Lives in the black header,
      which keeps the same left-to-right layout in both languages so the switch never moves. */
   function addToggle() {
     const set = (to) => { if (to === lang) return; try { localStorage.setItem('zeitaku-lang', to); } catch (e) {} location.reload(); };
