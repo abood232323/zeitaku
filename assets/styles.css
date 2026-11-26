@@ -46,7 +46,7 @@ body.dark .muted{color:var(--taupe)}
 .link{font-size:13px;letter-spacing:.24em;text-transform:uppercase;border-bottom:1px solid currentColor;padding-bottom:4px}
 
 /* announcement + header */
-.announce{background:var(--champagne);color:var(--obsidian);text-align:center;font-size:12px;letter-spacing:.3em;text-transform:uppercase;padding:9px 16px}
+.announce{background:var(--ivory);color:var(--obsidian);text-align:center;font-size:12px;letter-spacing:.3em;text-transform:uppercase;padding:9px 16px}
 .header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--obsidian);color:var(--champagne);border-bottom:1px solid var(--line-d)}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:41;background:var(--obsidian)}
 .header .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:76px}
