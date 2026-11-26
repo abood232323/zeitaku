@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Checkout · ZEITAKU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-view="checkout" data-page="checkout">
+
+<main class="wrap">
+  <div class="page-head" style="border:0;padding-bottom:0">
+    <div class="crumbs"><a href="index.html">Home</a><span>/</span><a href="bag.html">Bag</a><span>/</span><span>Checkout</span></div>
+    <h1 class="h1">Checkout</h1>
+  </div>
+  <div class="co">
+    <form id="co-form">
+      <div class="steps"><b>1 · Details</b><span>2 · Delivery</span><span>3 · Payment</span></div>
+      <fieldset class="fs"><legend>Contact</legend>
+        <div class="fields">
+          <label class="field full" for="co-email">Email<input id="co-email" type="email" placeholder="name@email.com" required></label>
+          <label class="field full" for="co-phone">Phone<input id="co-phone" type="tel" placeholder="+1 555 010 0000"></label>
+        </div>
+      </fieldset>
+      <fieldset class="fs"><legend>Delivery address</legend>
+        <div class="fields">
+          <label class="field" for="co-first">First name<input id="co-first" required></label>
+          <label class="field" for="co-last">Last name<input id="co-last" required></label>
+          <label class="field full" for="co-addr">Address<input id="co-addr" required></label>
+          <label class="field" for="co-city">City<input id="co-city" required></label>
+          <label class="field" for="co-country">Country<select id="co-country"><option>Select country</option><option>Jordan</option><option>United Arab Emirates</option><option>Saudi Arabia</option><option>United Kingdom</option><option>United States</option></select></label>
+        </div>
+      </fieldset>
+      <fieldset class="fs"><legend>Delivery</legend>
+        <label class="radio" for="d1"><span><input type="radio" name="ship" id="d1" checked>Standard · 2 to 4 days</span><span>Free</span></label>
+        <label class="radio" for="d2"><span><input type="radio" name="ship" id="d2">Express · next day</span><span>$25</span></label>
+      </fieldset>
+      <fieldset class="fs"><legend>Payment</legend>
+        <div style="border:1px dashed var(--line-l);padding:28px;text-align:center;color:var(--muted)">The payment form goes here when the store logic is built.</div>
+      </fieldset>
+      <button class="btn solid block" type="submit">Place order</button>
+    </form>
+    <aside class="summary" aria-label="Order summary">
+      <div class="h3">Your order</div>
+      <div id="mini" style="display:grid;gap:16px"></div>
+      <div class="row" style="border-top:1px solid var(--line-l);padding-top:16px"><span>Subtotal</span><span>$930</span></div>
+      <div class="row"><span>Shipping</span><span>Free</span></div>
+      <div class="row total"><span>Total</span><span>$930</span></div>
+    </aside>
+  </div>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

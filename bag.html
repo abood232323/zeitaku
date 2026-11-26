@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your bag · ZEITAKU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-view="bag" data-page="bag">
+
+<main class="wrap">
+  <div class="page-head" style="border:0;padding-bottom:0">
+    <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Bag</span></div>
+    <h1 class="h1">Your <em>bag</em></h1>
+  </div>
+  <div class="bag">
+    <div id="lines"></div>
+    <aside class="summary" aria-label="Order summary">
+      <div class="h3">Summary</div>
+      <div class="row"><span>Subtotal</span><span id="sub"></span></div>
+      <div class="row"><span>Shipping</span><span>Free</span></div>
+      <div class="promo"><label for="promo" style="position:absolute;left:-9999px">Promo code</label><input id="promo" placeholder="Promo code"><button type="button" onclick="toast('Codes come later')">Apply</button></div>
+      <div class="row total"><span>Total</span><span id="tot"></span></div>
+      <a class="btn solid block" href="checkout.html">Checkout</a>
+      <a class="btn ghost block" href="shop.html">Keep shopping</a>
+      <p class="note">Taxes included. Free returns within 14 days.</p>
+    </aside>
+  </div>
+</main>
+
+<section class="look">
+  <div class="wrap">
+    <div class="section-head"><h2 class="h2">You may <em style="color:var(--burgundy)">also like</em></h2></div>
+    <div class="grid" id="also"></div>
+  </div>
+</section>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

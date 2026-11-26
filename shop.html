@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shop · ZEITAKU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-view="shop" data-page="shop">
+
+<main class="wrap">
+  <div class="page-head">
+    <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Shop</span></div>
+    <h1 class="h1" id="shop-title">The <em>collection</em></h1>
+    <p>Suits, blazers, trousers and coats in obsidian, champagne, taupe and ivory. Every piece is cut for women.</p>
+  </div>
+  <div class="toolbar">
+    <div class="tabs" id="tabs" role="group" aria-label="Filter by category"></div>
+    <div class="sort"><span id="shop-count"></span>
+      <label for="sort" style="position:absolute;left:-9999px">Sort</label>
+      <select id="sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select>
+    </div>
+  </div>
+  <div class="grid" id="shop-grid" style="padding-bottom:120px"></div>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

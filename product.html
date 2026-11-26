@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Product · ZEITAKU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-view="product" data-page="product">
+
+<main class="wrap">
+  <div class="crumbs" style="padding-top:28px"><a href="index.html">Home</a><span>/</span><a href="shop.html">Shop</a><span>/</span><a id="crumb-cat" href="shop.html">Suits</a><span>/</span><span id="crumb-name"></span></div>
+  <div class="pdp">
+    <div class="gallery">
+      <div class="thumbs" id="thumbs"></div>
+      <div class="main-img"><img id="main-img" src="" alt=""></div>
+    </div>
+    <div class="info">
+      <div>
+        <div class="caps muted" id="p-cat" style="margin-bottom:14px"></div>
+        <h1 class="h1" id="p-name"></h1>
+        <div class="price" id="p-price" style="margin-top:16px"></div>
+      </div>
+      <p style="margin:0;color:#3d3833;max-width:50ch">Wool-silk twill with a peak lapel and a close waist. Half-canvassed so it moulds to you over time, and lined in burgundy.</p>
+      <div>
+        <div class="opt-head"><span class="caps">Colour</span><span id="p-colour"></span></div>
+        <div class="swatches" id="swatches" role="group" aria-label="Colour"></div>
+      </div>
+      <div>
+        <div class="opt-head"><span class="caps">Size (EU)</span><a class="link" href="#" style="font-size:11px">Size guide</a></div>
+        <div class="sizes" id="sizes" role="group" aria-label="Size"></div>
+        <p id="size-err" hidden style="margin:10px 0 0;font-size:13px;color:var(--burgundy)">Pick a size first.</p>
+      </div>
+      <div class="buy">
+        <button class="btn solid block" id="add">Add to bag</button>
+        <button class="fav" id="fav" aria-pressed="false" aria-label="Save to wishlist">♡</button>
+      </div>
+      <div class="perks">
+        <div>Free shipping and returns within 14 days</div>
+        <div>Need help with fit? <a href="contact.html" class="link" style="font-size:11px">Book a fitting</a></div>
+      </div>
+      <div class="acc">
+        <details open><summary>Details</summary><div class="body"><ul><li>Peak lapel, double-breasted, six buttons</li><li>Half-canvassed front</li><li>Burgundy cupro lining</li><li>Matching trouser sold separately</li></ul></div></details>
+        <details><summary>Fabric and care</summary><div class="body">98% wool, 2% silk. Dry clean only. Steam, don't iron, to keep the lapel line.</div></details>
+        <details><summary>Fit</summary><div class="body">Close at the waist, true to size. The model is 177 cm and wears size 36.</div></details>
+        <details><summary>Shipping and returns</summary><div class="body">Ships in 2 to 4 working days. Return unworn pieces within 14 days.</div></details>
+      </div>
+    </div>
+  </div>
+</main>
+
+<section class="look">
+  <div class="wrap">
+    <div class="section-head"><h2 class="h2">Complete the <em style="color:var(--burgundy)">look</em></h2><a class="link" href="shop.html">Shop all</a></div>
+    <div class="grid" id="look"></div>
+  </div>
+</section>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact · ZEITAKU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-view="contact" data-page="contact">
+
+<main class="wrap contact">
+  <div>
+    <div class="crumbs"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+    <h1 class="h1">Book a <em style="color:var(--burgundy)">fitting</em></h1>
+    <p style="max-width:42ch;color:var(--muted);margin:20px 0 0">Tell us what you're looking for and we'll help with size, cut and colour, in person or over a call.</p>
+    <div class="info-list">
+      <div><div class="caps muted" style="margin-bottom:8px">Email</div><div>hello@yourdomain.com</div></div>
+      <div><div class="caps muted" style="margin-bottom:8px">Phone and WhatsApp</div><div>+000 0000 0000</div></div>
+      <div><div class="caps muted" style="margin-bottom:8px">Fittings</div><div>By appointment · Sunday to Thursday, 11:00 to 19:00</div></div>
+    </div>
+  </div>
+  <form id="contact-form" style="display:grid;gap:18px;align-content:start;padding-top:8px">
+    <div class="fields">
+      <label class="field" for="c-name">Name<input id="c-name" required></label>
+      <label class="field" for="c-email">Email<input id="c-email" type="email" required></label>
+      <label class="field" for="c-type">I'm interested in<select id="c-type"><option>A fitting</option><option>Sizing help</option><option>An order</option><option>Something else</option></select></label>
+      <label class="field" for="c-date">Preferred date<input id="c-date" type="date"></label>
+      <label class="field full" for="c-msg">Message<textarea id="c-msg" placeholder="I'm looking for a black suit for work, usually a 38."></textarea></label>
+    </div>
+    <button class="btn solid" type="submit" style="justify-self:start">Send request</button>
+  </form>
+</main>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
