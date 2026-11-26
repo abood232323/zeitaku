@@ -304,3 +304,17 @@ body.dark .pcard .sub{color:var(--taupe)}
 .caps,.btn,.nav,.tools,.link,.tab,.announce,.badge,.quick,.acc summary,.footer h4{letter-spacing:.22em}
 
 @media (max-width:1080px) and (min-width:641px){#new-in .pcard:nth-child(4){display:none}}
+
+/* All-caps headline system: headlines, product names and accents set in
+   spaced capitals like the wordmark, about 30% smaller. Running text
+   (paragraphs, form inputs) stays in sentence case so it reads easily. */
+.h1,.h2,.h3,.pcard .nm,.fs legend,.drawer nav a,.lines div,.mini div{text-transform:uppercase}
+.h1{font-size:clamp(32px,4.3vw,62px);letter-spacing:.05em;line-height:1.12}
+.h2{font-size:clamp(24px,2.6vw,34px);letter-spacing:.06em;line-height:1.18}
+.h3{font-size:17px;letter-spacing:.08em}
+.pcard .nm{font-size:14px;letter-spacing:.08em;line-height:1.35}
+.info .h1{font-size:clamp(26px,2.6vw,36px)}
+.statement .h2{font-size:clamp(24px,3vw,40px);max-width:28ch}
+.cat .lbl .h3{font-size:19px}
+.drawer nav a{font-size:26px;letter-spacing:.06em}
+.fs legend{font-size:18px;letter-spacing:.08em}
