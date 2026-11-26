@@ -25,7 +25,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;paddin
 
 /* type */
 .wm{font-family:var(--display);font-weight:600;font-variation-settings:'opsz' 18;letter-spacing:var(--track);line-height:1;white-space:nowrap;display:inline-block}
-.wm .a{display:inline-block;transform:rotate(180deg);letter-spacing:0;margin-right:var(--track)}
+.wm .a{display:inline-block;transform:translateY(-.04em) rotate(180deg);letter-spacing:0;margin-right:var(--track)}
 .caps{font-family:var(--sans);font-weight:400;text-transform:uppercase;letter-spacing:.28em;font-size:13px}
 .it{font-family:var(--head);font-style:italic;font-weight:600;font-variation-settings:'opsz' 18}
 .h1{font-family:var(--head);font-weight:600;font-variation-settings:'opsz' 18;font-size:clamp(42px,6.2vw,90px);line-height:1.06;letter-spacing:-.005em;margin:0;padding-bottom:.06em;text-wrap:balance}
